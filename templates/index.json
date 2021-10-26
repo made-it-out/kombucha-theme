@@ -1,15 +1,344 @@
 {
   "sections": {
     "header": {
-      "type": "kombucha-header"
-
+      "type": "kombucha-header",
+      "settings": {
+        "header_menu": "main-menu"
+      }
     },
     "hero": {
-      "type": "kombucha-hero"
+      "type": "kombucha-hero",
+      "blocks": {
+        "d4d2bdb6-e813-497b-aff9-3121c4533056": {
+          "type": "info",
+          "settings": {
+            "info_key": "Ingredients",
+            "info_value": "100% Organic"
+          }
+        },
+        "633d10b8-149e-48f2-884d-577468343635": {
+          "type": "info",
+          "settings": {
+            "info_key": "Flavors",
+            "info_value": "5 variations"
+          }
+        },
+        "3d9957ff-65ac-4c51-8210-620502756ab0": {
+          "type": "info",
+          "settings": {
+            "info_key": "Volume",
+            "info_value": "465ml"
+          }
+        }
+      },
+      "block_order": [
+        "d4d2bdb6-e813-497b-aff9-3121c4533056",
+        "633d10b8-149e-48f2-884d-577468343635",
+        "3d9957ff-65ac-4c51-8210-620502756ab0"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/blackberry.png",
+        "tag": "Organic Tea",
+        "heading_top": "Sparkling . Tea",
+        "heading_bottom": "Kombucha",
+        "description": "Sparkling teas are essentially a mix of soda and tea, a cold, carbonated version of the healthy classic-and health experts love them. \"These beverages can provide the benefits of the tea in them,\" says Jessica Cording, R.D.",
+        "price": "89.99",
+        "btn_label": "Buy Now",
+        "btn_link": ""
+      }
+    },
+    "16352867203c4e6b48": {
+      "type": "kombucha-clients",
+      "blocks": {
+        "1d8ac039-15b5-43d7-a062-5683103016db": {
+          "type": "client",
+          "settings": {
+            "client_img": "shopify:\/\/shop_images\/afterpay_1_1.png"
+          }
+        },
+        "f5112585-2ff2-4a51-b7e1-4e592988487a": {
+          "type": "client",
+          "settings": {
+            "client_img": "shopify:\/\/shop_images\/unicef-1_1_1.png"
+          }
+        },
+        "2ce0489b-37e7-460e-b445-d033b2d0f5c6": {
+          "type": "client",
+          "settings": {
+            "client_img": "shopify:\/\/shop_images\/first-health_1.png"
+          }
+        },
+        "8dc5fb48-23fc-4ab7-a0f3-0cb92540bf84": {
+          "type": "client",
+          "settings": {
+            "client_img": "shopify:\/\/shop_images\/interneuron_1.png"
+          }
+        },
+        "ac6724f8-f2c5-4dda-93e4-dd2a4cf7cd9e": {
+          "type": "client",
+          "settings": {
+            "client_img": "shopify:\/\/shop_images\/lovato_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "1d8ac039-15b5-43d7-a062-5683103016db",
+        "f5112585-2ff2-4a51-b7e1-4e592988487a",
+        "2ce0489b-37e7-460e-b445-d033b2d0f5c6",
+        "8dc5fb48-23fc-4ab7-a0f3-0cb92540bf84",
+        "ac6724f8-f2c5-4dda-93e4-dd2a4cf7cd9e"
+      ],
+      "settings": {
+      }
+    },
+    "1635286932fe133f5e": {
+      "type": "kombucha-service",
+      "blocks": {
+        "96d4d130-616f-4504-9503-26ec4d1d243e": {
+          "type": "service",
+          "settings": {
+            "service_img": "shopify:\/\/shop_images\/quality-badge-star_1.png",
+            "service_message": "100% Genuien Product Gurentee"
+          }
+        },
+        "eea594f9-55a5-4b12-81d5-fd4446bc11bb": {
+          "type": "service",
+          "settings": {
+            "service_img": "shopify:\/\/shop_images\/delivery-truck-deliver-svgrepo-com_1.png",
+            "service_message": "Gurrented On Time Delivery"
+          }
+        },
+        "55ee459b-159a-4c12-8116-7f1237f253d1": {
+          "type": "service",
+          "settings": {
+            "service_img": "shopify:\/\/shop_images\/money-svgrepo-com_1.png",
+            "service_message": "100% Return Gurrentee & Exchange"
+          }
+        },
+        "f9ae5180-740a-48f4-be52-5705b5ab592a": {
+          "type": "service",
+          "settings": {
+            "service_img": "shopify:\/\/shop_images\/operator-support-svgrepo-com_1.png",
+            "service_message": "24 x7 Customer Support"
+          }
+        }
+      },
+      "block_order": [
+        "96d4d130-616f-4504-9503-26ec4d1d243e",
+        "eea594f9-55a5-4b12-81d5-fd4446bc11bb",
+        "55ee459b-159a-4c12-8116-7f1237f253d1",
+        "f9ae5180-740a-48f4-be52-5705b5ab592a"
+      ],
+      "settings": {
+        "heading": "100% Authentic Product",
+        "subheading": "And produce say the ten moments parties. Simple innate summer fat appear basket his desire joy.",
+        "btn_link": "shopify:\/\/collections",
+        "btn_label": "Explore More"
+      }
+    },
+    "1635287015d1907e41": {
+      "type": "kombucha-story",
+      "settings": {
+        "heading": "Arie Kombucha",
+        "description": "We loved designing this entire series of labels for Singapore based Arie Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when creating this lively and colourful universe."
+      }
+    },
+    "1635287024d53b03c5": {
+      "type": "kombucha-image-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/pineapple.png",
+        "reverse": true,
+        "tag": "Kombucha",
+        "heading": "Pineapple, Lychee & Hibiscus",
+        "text": "We loved designing this entire series of labels for Singapore based Arie Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when creating this lively and colourful universe.",
+        "btn_link": "",
+        "btn_label": "Add to cart"
+      }
+    },
+    "1635287046440afe47": {
+      "type": "kombucha-image-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/peach.png",
+        "reverse": false,
+        "tag": "Kombucha",
+        "heading": "Peach, Mint & Lemon Balm",
+        "text": "We loved designing this entire series of labels for Singapore based Arie Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when creating this lively and colourful universe.",
+        "btn_link": "",
+        "btn_label": "Add to cart"
+      }
+    },
+    "1635287057d2e24528": {
+      "type": "kombucha-image-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/blackberry.png",
+        "reverse": true,
+        "tag": "Kombucha",
+        "heading": "Blackberry, Raspberry, & Elderflower",
+        "text": "We loved designing this entire series of labels for Singapore based Arie Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when creating this lively and colourful universe.",
+        "btn_link": "",
+        "btn_label": "Add to cart"
+      }
+    },
+    "163528708154d5ac7c": {
+      "type": "kombucha-popular",
+      "blocks": {
+        "a309551f-1261-426d-8b64-698740f546a3": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pineapple.png",
+            "hover_color": "#fe5432",
+            "heading": "Pineapple, Lychee & Hibiscus",
+            "description": "We loved designing this entire series labels for Singapore based Arie Kombucha.",
+            "btn_link": "",
+            "btn_label": "Buy Now"
+          }
+        },
+        "ec89af6f-ec5d-44a8-88da-a6f413ce5f46": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/peach.png",
+            "hover_color": "#d3a38f",
+            "heading": "Peach, Mint & Lemon Balm",
+            "description": "We loved designing this entire series labels for Singapore based Arie Kombucha.",
+            "btn_link": "",
+            "btn_label": "Buy Now"
+          }
+        }
+      },
+      "block_order": [
+        "a309551f-1261-426d-8b64-698740f546a3",
+        "ec89af6f-ec5d-44a8-88da-a6f413ce5f46"
+      ],
+      "settings": {
+        "heading": "Popular This Week"
+      }
+    },
+    "1635287138eaa56443": {
+      "type": "kombucha-statistics",
+      "blocks": {
+        "3cfec309-83a6-4aec-a95e-daecfece6c60": {
+          "type": "statistic",
+          "settings": {
+            "number": "56",
+            "message": "Countries supported"
+          }
+        },
+        "b6a0f43b-dd4c-4717-a0e2-d28d4a62ae18": {
+          "type": "statistic",
+          "settings": {
+            "number": "122+",
+            "message": "International Branches"
+          }
+        },
+        "6e0a8a81-2920-4de6-995d-fdad71f3075b": {
+          "type": "statistic",
+          "settings": {
+            "number": "1M+",
+            "message": "Sales through-out the World"
+          }
+        }
+      },
+      "block_order": [
+        "3cfec309-83a6-4aec-a95e-daecfece6c60",
+        "b6a0f43b-dd4c-4717-a0e2-d28d4a62ae18",
+        "6e0a8a81-2920-4de6-995d-fdad71f3075b"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/graph_1.png"
+      }
+    },
+    "1635287172f61956de": {
+      "type": "kombucha-testimonials",
+      "blocks": {
+        "dc89a8aa-fe1d-413a-940a-2e1d96c7906a": {
+          "type": "testimonial",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg",
+            "rating": 5,
+            "author": "Robin Ayala Doe",
+            "quote": "Start particular impossible by reasonable oh impression is. Yet preference unpleasant melancholy but end appearance."
+          }
+        },
+        "21571bf1-5c12-4334-9730-4b9304dd194a": {
+          "type": "testimonial",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/profile-of-a-man-with-beard-and-styled-hair.jpg",
+            "rating": 5,
+            "author": "John De marli",
+            "quote": "And produce say the ten moments parties. Simple innate summer fat appear basket his desire joy. Outward at gravity do excited."
+          }
+        },
+        "58431b57-2a38-476c-879a-a096c0884c54": {
+          "type": "testimonial",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/young-man-watches-sunset.jpg",
+            "rating": 5,
+            "author": "Rowhan Smith",
+            "quote": "And excellence partiality estimation terror day everything. Outward clothes promise something do excited."
+          }
+        }
+      },
+      "block_order": [
+        "dc89a8aa-fe1d-413a-940a-2e1d96c7906a",
+        "21571bf1-5c12-4334-9730-4b9304dd194a",
+        "58431b57-2a38-476c-879a-a096c0884c54"
+      ],
+      "settings": {
+        "heading": "Testimonials",
+        "subheading": "Simple innate summer fat appear basket his desire joy."
+      }
+    },
+    "1635287175439c93d9": {
+      "type": "kombucha-footer",
+      "blocks": {
+        "99f512ef-4eb7-4c3e-8593-767e9a424d29": {
+          "type": "menu",
+          "settings": {
+            "menu": "menu",
+            "heading": "Menu"
+          }
+        },
+        "5c5aa57e-ca6e-44b4-b24b-ff029fab5c01": {
+          "type": "menu",
+          "settings": {
+            "menu": "categories",
+            "heading": "Categories"
+          }
+        },
+        "122617b0-4c1b-448c-9858-43d7c113e23c": {
+          "type": "menu",
+          "settings": {
+            "menu": "about-us",
+            "heading": "About Us"
+          }
+        }
+      },
+      "block_order": [
+        "99f512ef-4eb7-4c3e-8593-767e9a424d29",
+        "5c5aa57e-ca6e-44b4-b24b-ff029fab5c01",
+        "122617b0-4c1b-448c-9858-43d7c113e23c"
+      ],
+      "settings": {
+        "message": "Sufficient particular impossible by reasonable oh expression is. Yet preference unpleasant.",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "bottom_text": "Copyright kombucha. All right reserved"
+      }
     }
   },
   "order": [
     "header",
-    "hero"
+    "hero",
+    "16352867203c4e6b48",
+    "1635286932fe133f5e",
+    "1635287015d1907e41",
+    "1635287024d53b03c5",
+    "1635287046440afe47",
+    "1635287057d2e24528",
+    "163528708154d5ac7c",
+    "1635287138eaa56443",
+    "1635287172f61956de",
+    "1635287175439c93d9"
   ]
 }
