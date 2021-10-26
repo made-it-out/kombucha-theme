@@ -135,12 +135,59 @@
         "btn_link": "shopify:\/\/collections",
         "btn_label": "Explore More"
       }
+    },
+    "1635287015d1907e41": {
+      "type": "kombucha-story",
+      "settings": {
+        "heading": "Arie Kombucha",
+        "description": "We loved designing this entire series of labels for Singapore based Arie Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when creating this lively and colourful universe."
+      }
+    },
+    "1635287024d53b03c5": {
+      "type": "kombucha-image-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/pineapple.png",
+        "reverse": true,
+        "tag": "Kombucha",
+        "heading": "Pineapple, Lychee & Hibiscus",
+        "text": "We loved designing this entire series of labels for Singapore based Arie Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when creating this lively and colourful universe.",
+        "btn_link": "",
+        "btn_label": "Add to cart"
+      }
+    },
+    "1635287046440afe47": {
+      "type": "kombucha-image-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/peach.png",
+        "reverse": false,
+        "tag": "Kombucha",
+        "heading": "Peach, Mint & Lemon Balm",
+        "text": "We loved designing this entire series of labels for Singapore based Arie Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when creating this lively and colourful universe.",
+        "btn_link": "",
+        "btn_label": "Add to cart"
+      }
+    },
+    "1635287057d2e24528": {
+      "type": "kombucha-image-with-text",
+      "settings": {
+        "img": "shopify:\/\/shop_images\/blackberry.png",
+        "reverse": true,
+        "tag": "Kombucha",
+        "heading": "Blackberry, Raspberry, & Elderflower",
+        "text": "We loved designing this entire series of labels for Singapore based Arie Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when creating this lively and colourful universe.",
+        "btn_link": "",
+        "btn_label": "Add to cart"
+      }
     }
   },
   "order": [
     "header",
     "hero",
     "16352867203c4e6b48",
-    "1635286932fe133f5e"
+    "1635286932fe133f5e",
+    "1635287015d1907e41",
+    "1635287024d53b03c5",
+    "1635287046440afe47",
+    "1635287057d2e24528"
   ]
 }
