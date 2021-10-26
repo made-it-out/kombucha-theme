@@ -18,12 +18,12 @@
             {%for block in section.blocks%}
             <style>
                 
-                .popular__card.{{block.settings.hover_color}}:hover{
+                .popular__card.{{block.settings.hover_color | remove: "#"}}:hover{
                     box-shadow: inset 0px 0px 20px 0px {{block.settings.hover_color | color_modify: 'alpha', 0.5}};
                 }
             </style>
             <div class="col-lg-6">
-                <div class="popular__card {{block.settings.hover_color}} pop-in">
+                <div class="popular__card {{block.settings.hover_color | remove: "#"}} pop-in">
                     <div class="row">
                         <div class="col-sm-6">
                             <div class="popular__card-text-container">
@@ -48,7 +48,7 @@
 
 {%schema%}
 {
-    "name": "Popular",
+    "name": "Kombucha Popular",
     "settings": [
     {
         "type": "text",
@@ -82,9 +82,7 @@
             "type": "textarea",
             "id": "description",
             "label": "Description",
-            "default": "We loved designing this entire series of labels
-            for Singapore based Arie
-            Kombucha."
+            "default": "We loved designing this entire series labels for Singapore based Arie Kombucha."
         },
         {
             "type": "url",
@@ -94,9 +92,15 @@
         {
             "type": "text",
             "id": "btn_label",
-            "label": "Button label"
+            "label": "Button label",
+            "default": "Buy Now"
         }
         ]
+    }
+    ],
+    "presets": [
+    {
+        "name": "Kombucha Popular"
     }
     ]
 }

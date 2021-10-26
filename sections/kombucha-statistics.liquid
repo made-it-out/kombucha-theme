@@ -14,8 +14,8 @@
                     {%for block in section.blocks%}
                     <div class="col-sm-4">
                         <div class="statistics__item fade-from-right">
-                            <p class="statistics__number">{{block.settings.number}}</p>
-                            <p class="statistics__message">{{block.settings.message}}</p>
+                            <p class="statistics__number">{{block.settings.number | escape}}</p>
+                            <p class="statistics__message">{{block.settings.message | escape}}</p>
                         </div>
                     </div>
                     {%endfor%}
@@ -28,7 +28,7 @@
 
 {%schema%}
 {
-    "name": "Statistics",
+    "name": "Kombucha Statistics",
     "settings": [
     {
         "type": "image_picker",
@@ -42,7 +42,7 @@
         "type": "statistic",
         "settings": [
         {
-            "type": "number",
+            "type": "text",
             "id": "number",
             "label": "Number",
             "default": "56"
@@ -54,6 +54,11 @@
             "default": "Countries supported"
         }
         ]
+    }
+    ],
+    "presets": [
+    {
+        "name": "Kombucha Statistics"
     }
     ]
 }

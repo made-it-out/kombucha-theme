@@ -3,9 +3,9 @@
         <a href="{{routes.root_url}}" class="logo">Kombucha</a>
 
         <nav class="nav">
-            {{%for link in section.settings.header_menu%}}
+            {%for link in section.settings.header_menu%}
             <a href="{{ link.url }}" class="nav__link">{{ link.title }}</a>
-            {{%endfor%}}
+            {%endfor%}
         </nav>
 
         <div class="header__icons">
@@ -18,6 +18,7 @@
         <i class="fas fa-bars header__toggle" tabindex="0"></i>
     </div>
 </header>
+<script src="{{ 'kombucha-header.js' | asset_url }}" defer="defer"></script>
 
 {%schema%}
 {
@@ -29,6 +30,11 @@
             "label": "Header Menu",
             "default": "main-menu"
         }
+    ],
+    "presets": [
+    {
+        "name": "Kombucha Header"
+    }
     ]
 }
 {%endschema%}

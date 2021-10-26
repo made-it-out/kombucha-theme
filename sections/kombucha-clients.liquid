@@ -2,7 +2,7 @@
     <div class="container">
         {%for block in section.blocks%}
         <div class="clients__logo fade-from-left">
-            <img src="{{block.settings.client_img | img_url: '300x'}}" />
+            <img src="{{block.settings.client_img | img_url: '300x'}}"/>
         </div>
         {%endfor%}
 
@@ -11,7 +11,7 @@
 
 {%schema%}
 {
-"name": "Clients",
+"name": "Kombucha Clients",
 "blocks": [
 {
 "name": "Client",
@@ -24,6 +24,11 @@
 }
 ],
 "limit": 5
+}
+],
+"presets": [
+{
+    "name": "Kombucha Clients"
 }
 ]
 }

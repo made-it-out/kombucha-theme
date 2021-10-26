@@ -8,9 +8,9 @@
             <div class="col-6 col-md-3">
                 <div class="service__feature fade-from-left">
                     <div class="service__icon">
-                        <img src="{{block.service_img | img_url: '300x'}}">
+                        <img src="{{block.settings.service_img | img_url: '300x'}}">
                     </div>
-                    <p class="service__message">{{block.service_message}}</p>
+                    <p class="service__message">{{block.settings.service_message}}</p>
                 </div>
             </div>
             {%endfor%}
@@ -24,7 +24,7 @@
 
 {%schema%}
 {
-    "name": "Services",
+    "name": "Kombucha Service",
     "settings": [
     {
         "type": "text",
@@ -36,8 +36,7 @@
         "type": "text",
         "id": "subheading",
         "label": "Subheading",
-        "default": "And produce say the ten moments parties. Simple innate summer fat appear
-        basket his desire joy."
+        "default": "And produce say the ten moments parties. Simple innate summer fat appear basket his desire joy."
     },
     {
         "type": "url",
@@ -66,6 +65,11 @@
             "label": "Message"
         }
         ]
+    }
+    ],
+    "presets": [
+    {
+        "name": "Kombucha Service"
     }
     ]
 }

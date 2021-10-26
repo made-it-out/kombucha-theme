@@ -3,7 +3,7 @@
         
         <div class="row">
             <div class="col-md-6">
-                <div class="image-with-text__img-container fade-from-left">
+                <div class="image-with-text__img-container fade-from-{%if section.settings.reverse%}right{%else%}left{%endif%}">
                     <div class="image-with-text__watch-video">
                         <p class="image-with-text__watch-video-cta"><i class="fas fa-play play-icon"></i>
                             <span>Watch Video</span>
@@ -14,7 +14,7 @@
             </div>
 
             <div class="col-md-6">
-                <div class="image-with-text__text-container fade-from-right">
+                <div class="image-with-text__text-container fade-from-{%if section.settings.reverse%}left{%else%}right{%endif%}">
                     <p class="image-with-text__tag">{{section.settings.tag | escape}}</p>
                     <p class="image-with-text__heading">{{section.settings.heading | escape}}</p>
                     <p class="image-with-text__text">{{section.settings.text | escape}}</p>
@@ -27,7 +27,7 @@
 
 {%schema%}
 {
-    "name": "Image With Text",
+    "name": "Kombucha Image With Text",
     "settings": [
     {
         "type": "image_picker",
@@ -64,11 +64,7 @@
         "type": "textarea",
         "id": "text",
         "label": "Text",
-        "default": "We loved designing this entire series of labels for Singapore
-        based Arie
-        Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when
-        creating this
-        lively and colourful universe."
+        "default": "We loved designing this entire series of labels for Singapore based Arie Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when creating this lively and colourful universe."
     },
     {
         "type": "url",
@@ -76,9 +72,15 @@
         "label": "Button link"
     },
     {
-        "type": "url",
+        "type": "text",
         "id": "btn_label",
-        "label": "Button label"
+        "label": "Button label",
+        "default": "Add to cart"
+    }
+    ],
+    "presets": [
+    {
+        "name": "Kombucha Image With Text"
     }
     ]
 }

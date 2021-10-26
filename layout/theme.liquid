@@ -37,6 +37,7 @@
 
   {% render 'meta-tags' %}
 
+  <script src="{{ 'kombucha.js' | asset_url }}" defer="defer"></script>
   {{ content_for_header }}
 
 <body>
@@ -44,8 +45,6 @@
   <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
     {{ content_for_layout }}
   </main>
-
-  {{'kombucha.js' | asset_url | script_tag}}
 </body>
 
 </html>

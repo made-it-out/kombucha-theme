@@ -118,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .footer__social-icon {
   cursor: pointer;
+  text-decoration: none;
   color: var(--clr-white);
   background-color: var(--clr-secondary);
   height: 1.5rem;
@@ -306,7 +307,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero {
   width: 100vw;
-  overflow-x: hidden;
   padding: 1rem 0 2rem;
 }
 .hero__img {
@@ -415,6 +415,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero__info-pair {
   display: flex;
   flex-direction: column;
+
 }
 .hero__info-key {
   text-transform: uppercase;
@@ -452,42 +453,6 @@ h1, h2, h3, h4, h5, h6 {
 .image-with-text.reverse .image-with-text__watch-video .play-icon {
   margin-left: unset;
   margin-right: 0.4rem;
-}
-.image-with-text.primary .image-with-text__img-container::before {
-  bottom: 0;
-  left: 0;
-  border-left: 3px solid var(--clr-primary);
-  border-bottom: 3px solid var(--clr-primary);
-}
-.image-with-text.primary .image-with-text__img-container::after {
-  top: 0;
-  right: 0;
-  border-right: 3px solid var(--clr-primary);
-  border-top: 3px solid var(--clr-primary);
-}
-.image-with-text.secondary .image-with-text__img-container::before {
-  bottom: 0;
-  left: 0;
-  border-left: 3px solid var(--clr-secondary);
-  border-bottom: 3px solid var(--clr-secondary);
-}
-.image-with-text.secondary .image-with-text__img-container::after {
-  top: 0;
-  right: 0;
-  border-right: 3px solid var(--clr-secondary);
-  border-top: 3px solid var(--clr-secondary);
-}
-.image-with-text.tertiary .image-with-text__img-container::before {
-  top: 0;
-  left: 0;
-  border-left: 3px solid var(--clr-tertiary);
-  border-top: 3px solid var(--clr-tertiary);
-}
-.image-with-text.tertiary .image-with-text__img-container::after {
-  bottom: 0;
-  right: 0;
-  border-right: 3px solid var(--clr-tertiary);
-  border-bottom: 3px solid var(--clr-tertiary);
 }
 .image-with-text__img-container {
   position: relative;
@@ -584,7 +549,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 2rem;
   }
 }
-.image-with-text__vendor {
+.image-with-text__tag {
   color: var(--clr-primary);
   font-size: 1.1rem;
   font-family: "Roboto", sans-serif;
@@ -1035,10 +1000,10 @@ h1, h2, h3, h4, h5, h6 {
 .fade-from-left.animate {
   -webkit-animation-name: fade-from-left;
           animation-name: fade-from-left;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
-  -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
-          animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
+          animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1070,10 +1035,10 @@ h1, h2, h3, h4, h5, h6 {
 .fade-from-right.animate {
   -webkit-animation-name: fade-from-right;
           animation-name: fade-from-right;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
-  -webkit-animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
-          animation-timing-function: cubic-bezier(0, 0.5, 0, 1);
+  -webkit-animation-duration: 1200ms;
+          animation-duration: 1200ms;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
+          animation-timing-function: cubic-bezier(0, 0, 0.5, 1);
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }

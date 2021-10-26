@@ -42,10 +42,11 @@
         </div>
     </div>
 </section>
+<script src="{{ 'kombucha-testimonials.js' | asset_url }}" defer="defer"></script>
 
 {%schema%}
 {
-    "name": "Testimonials",
+    "name": "Kombucha Testimonials",
     "settings": [
         {
             "type": "text",
@@ -71,12 +72,13 @@
             "label": "Author picture"
         },
         {
-            "type": "number",
+            "type": "range",
             "id": "rating",
             "label": "Star rating",
             "default": 5,
             "min": 1,
-            "max": 5
+            "max": 5,
+            "step": 1
         },
         {
             "type": "text",
@@ -91,6 +93,11 @@
             "default": "Start particular impossible by reasonable oh impression is. Yet preference unpleasant melancholy but end appearance."
         }
         ]
+    }
+    ],
+    "presets": [
+    {
+        "name": "Kombucha Testimonials"
     }
     ]
 }
