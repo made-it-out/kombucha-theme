@@ -212,6 +212,40 @@
       "settings": {
         "heading": "Popular This Week"
       }
+    },
+    "1635287138eaa56443": {
+      "type": "kombucha-statistics",
+      "blocks": {
+        "3cfec309-83a6-4aec-a95e-daecfece6c60": {
+          "type": "statistic",
+          "settings": {
+            "number": "56",
+            "message": "Countries supported"
+          }
+        },
+        "b6a0f43b-dd4c-4717-a0e2-d28d4a62ae18": {
+          "type": "statistic",
+          "settings": {
+            "number": "122+",
+            "message": "International Branches"
+          }
+        },
+        "6e0a8a81-2920-4de6-995d-fdad71f3075b": {
+          "type": "statistic",
+          "settings": {
+            "number": "1M+",
+            "message": "Sales through-out the World"
+          }
+        }
+      },
+      "block_order": [
+        "3cfec309-83a6-4aec-a95e-daecfece6c60",
+        "b6a0f43b-dd4c-4717-a0e2-d28d4a62ae18",
+        "6e0a8a81-2920-4de6-995d-fdad71f3075b"
+      ],
+      "settings": {
+        "img": "shopify:\/\/shop_images\/graph_1.png"
+      }
     }
   },
   "order": [
@@ -223,6 +257,7 @@
     "1635287024d53b03c5",
     "1635287046440afe47",
     "1635287057d2e24528",
-    "163528708154d5ac7c"
+    "163528708154d5ac7c",
+    "1635287138eaa56443"
   ]
 }
