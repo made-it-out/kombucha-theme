@@ -246,6 +246,85 @@
       "settings": {
         "img": "shopify:\/\/shop_images\/graph_1.png"
       }
+    },
+    "1635287172f61956de": {
+      "type": "kombucha-testimonials",
+      "blocks": {
+        "dc89a8aa-fe1d-413a-940a-2e1d96c7906a": {
+          "type": "testimonial",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/woman-infront-of-tree-with-berries.jpeg",
+            "rating": 5,
+            "author": "Robin Ayala Doe",
+            "quote": "Start particular impossible by reasonable oh impression is. Yet preference unpleasant melancholy but end appearance."
+          }
+        },
+        "21571bf1-5c12-4334-9730-4b9304dd194a": {
+          "type": "testimonial",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/profile-of-a-man-with-beard-and-styled-hair.jpg",
+            "rating": 5,
+            "author": "John De marli",
+            "quote": "And produce say the ten moments parties. Simple innate summer fat appear basket his desire joy. Outward at gravity do excited."
+          }
+        },
+        "58431b57-2a38-476c-879a-a096c0884c54": {
+          "type": "testimonial",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/young-man-watches-sunset.jpg",
+            "rating": 5,
+            "author": "Rowhan Smith",
+            "quote": "And excellence partiality estimation terror day everything. Outward clothes promise something do excited."
+          }
+        }
+      },
+      "block_order": [
+        "dc89a8aa-fe1d-413a-940a-2e1d96c7906a",
+        "21571bf1-5c12-4334-9730-4b9304dd194a",
+        "58431b57-2a38-476c-879a-a096c0884c54"
+      ],
+      "settings": {
+        "heading": "Testimonials",
+        "subheading": "Simple innate summer fat appear basket his desire joy."
+      }
+    },
+    "1635287175439c93d9": {
+      "type": "kombucha-footer",
+      "blocks": {
+        "99f512ef-4eb7-4c3e-8593-767e9a424d29": {
+          "type": "menu",
+          "settings": {
+            "menu": "menu",
+            "heading": "Menu"
+          }
+        },
+        "5c5aa57e-ca6e-44b4-b24b-ff029fab5c01": {
+          "type": "menu",
+          "settings": {
+            "menu": "categories",
+            "heading": "Menu"
+          }
+        },
+        "122617b0-4c1b-448c-9858-43d7c113e23c": {
+          "type": "menu",
+          "settings": {
+            "menu": "about-us",
+            "heading": "Menu"
+          }
+        }
+      },
+      "block_order": [
+        "99f512ef-4eb7-4c3e-8593-767e9a424d29",
+        "5c5aa57e-ca6e-44b4-b24b-ff029fab5c01",
+        "122617b0-4c1b-448c-9858-43d7c113e23c"
+      ],
+      "settings": {
+        "message": "Sufficient particular impossible by reasonable oh expression is. Yet preference unpleasant.",
+        "facebook": "",
+        "twitter": "",
+        "instagram": "",
+        "bottom_text": "Copyright kombucha. All right reserved"
+      }
     }
   },
   "order": [
@@ -258,6 +337,8 @@
     "1635287046440afe47",
     "1635287057d2e24528",
     "163528708154d5ac7c",
-    "1635287138eaa56443"
+    "1635287138eaa56443",
+    "1635287172f61956de",
+    "1635287175439c93d9"
   ]
 }
