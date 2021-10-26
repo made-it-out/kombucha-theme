@@ -178,6 +178,40 @@
         "btn_link": "",
         "btn_label": "Add to cart"
       }
+    },
+    "163528708154d5ac7c": {
+      "type": "kombucha-popular",
+      "blocks": {
+        "a309551f-1261-426d-8b64-698740f546a3": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/pineapple.png",
+            "hover_color": "#fe5432",
+            "heading": "Pineapple, Lychee & Hibiscus",
+            "description": "We loved designing this entire series labels for Singapore based Arie Kombucha.",
+            "btn_link": "",
+            "btn_label": "Buy Now"
+          }
+        },
+        "ec89af6f-ec5d-44a8-88da-a6f413ce5f46": {
+          "type": "card",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/peach.png",
+            "hover_color": "#d3a38f",
+            "heading": "Peach, Mint & Lemon Balm",
+            "description": "We loved designing this entire series labels for Singapore based Arie Kombucha.",
+            "btn_link": "",
+            "btn_label": "Buy Now"
+          }
+        }
+      },
+      "block_order": [
+        "a309551f-1261-426d-8b64-698740f546a3",
+        "ec89af6f-ec5d-44a8-88da-a6f413ce5f46"
+      ],
+      "settings": {
+        "heading": "Popular This Week"
+      }
     }
   },
   "order": [
@@ -188,6 +222,7 @@
     "1635287015d1907e41",
     "1635287024d53b03c5",
     "1635287046440afe47",
-    "1635287057d2e24528"
+    "1635287057d2e24528",
+    "163528708154d5ac7c"
   ]
 }
