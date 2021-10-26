@@ -1,11 +1,14 @@
 {
   "sections": {
     "header": {
-      "type": "kombucha-header"
-
+      "type": "kombucha-header",
+      "settings": {
+      }
     },
     "hero": {
-      "type": "kombucha-hero"
+      "type": "kombucha-hero",
+      "settings": {
+      }
     }
   },
   "order": [
