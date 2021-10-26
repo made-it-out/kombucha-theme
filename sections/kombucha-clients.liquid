@@ -1,0 +1,30 @@
+<section class="clients">
+    <div class="container">
+        {%for block in section.blocks%}
+        <div class="clients__logo fade-from-left">
+            <img src="{{block.settings.client_img | img_url: '300x'}}" />
+        </div>
+        {%endfor%}
+
+    </div>
+</section>
+
+{%schema%}
+{
+"name": "Clients",
+"blocks": [
+{
+"name": "Client",
+"type": "client",
+"settings": [
+{
+"type": "image_picker",
+"id": "client_img",
+"label": "Image"
+}
+],
+"limit": 5
+}
+]
+}
+{%endschema%}

@@ -1,0 +1,97 @@
+<section class="testimonials">
+    <h1 class="testimonials__heading">{{section.settings.heading | escape}}</h1>
+    <p class="testimonials__subheading">{{section.settings.subheading | escape}}</p>
+
+    <div class="testimonials__slider">
+        {%for block in section.blocks%}
+        <div class="testimonials__slide">
+            <div class="testimonials__quotation-mark">
+                <i class="fas fa-quote-left fa-5x"></i>
+            </div>
+
+            <div class="testimonials__img-container">
+                <img src="{{block.settings.img | img_url: '100x'}}" alt="author profile"
+                    class="testimonials__img">
+            </div>
+
+            
+
+            <div class="testimonials__rating">
+                {%for i in (1..block.settings.rating)%}
+                <i class="fas fa-star"></i>
+                {%endfor%}
+            </div>
+
+            <p class="testimonials__author">
+                {{block.settings.author | escape}}
+            </p>
+
+            <p class="testimonials__quote">
+                {{block.settings.quote | escape}}
+            </p>
+        </div>
+        {%endfor%}
+    </div>
+
+    <div class="testimonials__pagination">
+        <div class="testimonials__previous" tabindex="0">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="testimonials__next active" tabindex="0">
+            <i class="fas fa-chevron-right"></i>
+        </div>
+    </div>
+</section>
+
+{%schema%}
+{
+    "name": "Testimonials",
+    "settings": [
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Testimonials"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "label": "Subheading",
+            "default": "Simple innate summer fat appear basket his desire joy."
+        }
+    ],
+    "blocks": [
+    {
+        "name": "Testimonial",
+        "type": "testimonial",
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Author picture"
+        },
+        {
+            "type": "number",
+            "id": "rating",
+            "label": "Star rating",
+            "default": 5,
+            "min": 1,
+            "max": 5
+        },
+        {
+            "type": "text",
+            "id": "author",
+            "label": "Author name",
+            "default": "Robin Ayala Doe"
+        },
+        {
+            "type": "textarea",
+            "id": "quote",
+            "label": "Quote",
+            "default": "Start particular impossible by reasonable oh impression is. Yet preference unpleasant melancholy but end appearance."
+        }
+        ]
+    }
+    ]
+}
+{%endschema%}

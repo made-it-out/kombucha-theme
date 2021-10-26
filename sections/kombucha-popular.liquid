@@ -1,0 +1,103 @@
+<section class="popular">
+    <div class="container">
+        <div class="popular__top fade-slide-up">
+            <h1 class="popular__heading">Popular This Week</h1>
+            <div class="popular__count">
+                <span class="popular__number active">01</span>
+                <div class="popular__dash active"></div>
+
+                <span class="popular__number">02</span>
+                <div class="popular__dash"></div>
+
+                <span class="popular__number">03</span>
+                <div class="popular__dash"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            {%for block in section.blocks%}
+            <style>
+                
+                .popular__card.{{block.settings.hover_color}}:hover{
+                    box-shadow: inset 0px 0px 20px 0px {{block.settings.hover_color | color_modify: 'alpha', 0.5}};
+                }
+            </style>
+            <div class="col-lg-6">
+                <div class="popular__card {{block.settings.hover_color}} pop-in">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="popular__card-text-container">
+                                <p class="popular__card-heading">{{block.settings.heading | escape}}</p>
+                                <p class="popular__card-description">{{block.settings.description | escape}}</p>
+
+                                <a href="{{block.settings.btn_link}}" class="btn">{{block.settings.btn_label | escape}}</a>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="popular__card-img-container">
+                                <img src="{{block.settings.img | img_url: '300x'}}" class="popular__card-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</section>
+
+{%schema%}
+{
+    "name": "Popular",
+    "settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Popular This Week"
+    }
+    ],
+    "blocks": [
+    {
+        "name": "Card",
+        "type": "card",
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "img",
+            "label": "Image"
+        },
+        {
+            "type": "color",
+            "id": "hover_color",
+            "label": "Hover color"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Pineapple, Lychee & Hibiscus"
+        },
+        {
+            "type": "textarea",
+            "id": "description",
+            "label": "Description",
+            "default": "We loved designing this entire series of labels
+            for Singapore based Arie
+            Kombucha."
+        },
+        {
+            "type": "url",
+            "id": "btn_link",
+            "label": "Button link"
+        },
+        {
+            "type": "text",
+            "id": "btn_label",
+            "label": "Button label"
+        }
+        ]
+    }
+    ]
+}
+{%endschema%}

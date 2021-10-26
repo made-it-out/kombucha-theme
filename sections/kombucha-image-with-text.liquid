@@ -1,0 +1,85 @@
+<section class="image-with-text {%if section.settings.reverse%}reverse{%endif%}">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-6">
+                <div class="image-with-text__img-container fade-from-left">
+                    <div class="image-with-text__watch-video">
+                        <p class="image-with-text__watch-video-cta"><i class="fas fa-play play-icon"></i>
+                            <span>Watch Video</span>
+                        </p>
+                    </div>
+                    <img src="{{section.settings.img | img_url: "800x"}}" class="image-with-text__img">
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="image-with-text__text-container fade-from-right">
+                    <p class="image-with-text__tag">{{section.settings.tag | escape}}</p>
+                    <p class="image-with-text__heading">{{section.settings.heading | escape}}</p>
+                    <p class="image-with-text__text">{{section.settings.text | escape}}</p>
+                    <a href="{{section.settings.btn_link | escape}}" class="btn">{{section.settings.btn_label | escape}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{%schema%}
+{
+    "name": "Image With Text",
+    "settings": [
+    {
+        "type": "image_picker",
+        "id": "img",
+        "label": "Image"
+    },
+    {
+        "type": "video_url",
+        "id": "video",
+        "label": "Youtube video",
+        "accept": [
+            "youtube"
+        ]
+    },
+    {
+        "type": "checkbox",
+        "id": "reverse",
+        "label": "Reverse",
+        "default": false
+    },
+    {
+        "type": "text",
+        "id": "tag",
+        "label": "Tag",
+        "default": "Kombucha"
+    },
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Peach, Mint & Lemon Balm"
+    },
+    {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "We loved designing this entire series of labels for Singapore
+        based Arie
+        Kombucha. The label's philosophy concerning fresh and energetic ingredients was key when
+        creating this
+        lively and colourful universe."
+    },
+    {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Button link"
+    },
+    {
+        "type": "url",
+        "id": "btn_label",
+        "label": "Button label"
+    }
+    ]
+}
+{%endschema%}

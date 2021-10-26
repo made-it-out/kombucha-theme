@@ -1,0 +1,123 @@
+<section class="hero">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="/assets/blackberry.png" alt="blackberry kombucha" class="hero__img pop-in">
+            </div>
+            <div class="col-md-6">
+                <div class="hero__body">
+                    <span class="hero__tag pop-in">{{section.settings.hero_tag | escape}}</span>
+
+                    <div class="hero__headings">
+                        <h1 class="hero__heading secondary pop-in">
+                            {{section.settings.hero_heading_top | escape}}
+                        </h1>
+                        <h1 class="hero__heading primary pop-in">{{section.settings.hero_heading_bottom | escape}}</h1>
+                    </div>
+
+                    <p class="hero__description fade-slide-up">{{section.settings.hero_description | escape}}</p>
+
+                    <p class="hero__price fade-slide-up">
+                        <span class="hero__dollar-sign">$</span>
+                        <span class="hero__price-number">{{section.settings.hero_price | escape}}</span>
+                    </p>
+
+                    <hr class="fade-slide-up">
+
+                    <a href="{{section.settings.hero_btn_link}}" class="btn fade-slide-up">{{section.settings.hero_btn_label}}</a>
+
+                    {%for block in section.blocks%}
+                    {%case block.type%}
+                        {%when 'info'%}
+                        <div class="hero__info fade-slide-up">
+                            <div class="hero__info-pair">
+                                <p class="hero__info-key">{{block.info_key | escape}}</p>
+                                <p class="hero__info-value">{{block.info_value | escape}}</p>
+                            </div>
+                        </div>
+                    {%endcase%}
+                    {%endfor%}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{%schema%}
+{
+    "name": "Kombucha Hero",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "hero_img",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "hero_tag",
+            "label": "Tag",
+            "default": "Organic Tea"
+        },
+        {
+            "type": "text",
+            "id": "hero_heading_top",
+            "label": "Top heading",
+            "default": "Sparkling . Tea"
+        },
+        {
+            "type": "text",
+            "id": "hero_heading_bottom",
+            "label": "Bottom heading",
+            "default": "Kombucha"
+        },
+        {
+            "type": "text",
+            "id": "hero_description",
+            "label": "Description",
+            "default": "Sparkling teas are essentially a mix of soda and tea, a cold,
+            carbonated
+            version of the healthy
+            classic-and health experts love them. "These beverages can provide the benefits of the tea
+            in them,"
+            says Jessica Cording, R.D."
+        },
+        {
+            "type": "text",
+            "id": "hero_price",
+            "label": "Price",
+            "default": "89.99"
+        },
+        {
+            "type": "text",
+            "id": "hero_btn_label",
+            "label": "Button label",
+            "default": "Buy Now"
+        },
+        {
+            "type": "url",
+            "id": "hero_btn_link",
+            "label": "Button link"
+        }
+    ],
+    "blocks": [
+    {
+        "name": "Info",
+        "type": "info",
+        "settings": [
+        {
+            "type": "text",
+            "id": "info_key",
+            "label": "Key"
+        },
+        {
+            "type": "text",
+            "id": "info_value",
+            "label": "Value"
+        }
+        ],
+        "limit": 3
+    }
+    ]
+}
+{%endschema%}

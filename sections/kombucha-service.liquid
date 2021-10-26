@@ -1,0 +1,72 @@
+<section class="service fade-slide-up">
+    <div class="container">
+        <h2 class="service__heading">{{section.settings.heading}}</h2>
+        <p class="service__subheading">{{section.settings.subheading}}</p>
+
+        <div class="service__features row">
+            {%for block in section.blocks%}
+            <div class="col-6 col-md-3">
+                <div class="service__feature fade-from-left">
+                    <div class="service__icon">
+                        <img src="{{block.service_img | img_url: '300x'}}">
+                    </div>
+                    <p class="service__message">{{block.service_message}}</p>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+
+        <a href="{{section.settings.btn_link}}" class="btn">
+            {{section.settings.btn_label}}
+        </a>
+    </div>
+</section>
+
+{%schema%}
+{
+    "name": "Services",
+    "settings": [
+    {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "100% Authentic Product"
+    },
+    {
+        "type": "text",
+        "id": "subheading",
+        "label": "Subheading",
+        "default": "And produce say the ten moments parties. Simple innate summer fat appear
+        basket his desire joy."
+    },
+    {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Button link"
+    },
+    {
+        "type": "text",
+        "id": "btn_label",
+        "label": "Button label"
+    }
+    ],
+    "blocks": [
+    {
+        "name": "Service",
+        "type": "service",
+        "settings": [
+        {
+            "type": "image_picker",
+            "id": "service_img",
+            "label": "Image"
+        },
+        {
+            "type": "text",
+            "id": "service_message",
+            "label": "Message"
+        }
+        ]
+    }
+    ]
+}
+{%endschema%}

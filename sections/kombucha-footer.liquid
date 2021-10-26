@@ -1,0 +1,102 @@
+<footer class="footer">
+    <div class="container">
+        <div class="row footer__top">
+            <div class="col-md-5 col-lg-4 footer__left-container">
+                <div class="footer__left-column">
+                    <p class="footer__logo">{{shop.name}}</p>
+                    <p class="footer__message">{{section.settings.message | escape}}
+                    </p>
+
+                    <div class="footer__social-icons">
+                        <a href="{{section.settings.facebook | url_escape}}" class="footer__social-icon"><i class="fab fa-facebook-f"></i></a>
+
+                        <a href="{{section.settings.twitter | url_escape}}" class="footer__social-icon"><i class="fab fa-twitter"></i></a>
+
+                        <a href="{{section.settings.instagram | url_escape}}" class="footer__social-icon"><i class="fab fa-instagram"></i></a>                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-2 footer__gap"></div>
+
+            <div class="col-md-7 col-lg-6">
+                <div class="footer__right-column">
+                    <div class="row">
+                        {%for block in section.blocks%}
+                        <div class="col-sm-6 col-md-4 footer__menu-container">
+                            <div class="footer__menu">
+                                <p class="footer__menu-heading">{{block.settings.heading}}</p>
+
+                                {%for link in block.settings.menu.links%}
+                                <a href="{{link.url}}" class="footer__link">{{link.title}}</a>
+                                {%endfor%}
+                            </div>
+                        </div>
+                        {%endfor%}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__bottom">
+        <p>{{section.settings.bottom_text | escape}}</p>
+    </div>
+    </div>
+</footer>
+
+{%schema%}
+{
+    "name": "Footer",
+    "settings": [
+    {
+        "type": "text",
+        "id": "message",
+        "label": "Message",
+        "default": "Sufficient particular impossible by reasonable oh expression is. Yet
+        preference unpleasant."
+    },
+    {
+        "type": "url",
+        "id": "facebook",
+        "label": "Facebook link"
+    },
+    {
+        "type": "url",
+        "id": "twitter",
+        "label": "Twitter link"
+    },
+    {
+        "type": "url",
+        "id": "instagram",
+        "label": "Instagram link"
+    },
+    {
+        "type": "textarea",
+        "id": "bottom_text",
+        "label": "Bottom text",
+        "default": "&copy; Copyright kombucha. All right reserved"
+    }
+    ],
+    "blocks": [
+    {
+        "name": "Menu",
+        "type": "menu",
+        "settings": [
+        {
+            "type": "link_list",
+            "id": "menu",
+            "label": "Menu",
+            "default": "main-menu"
+        },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Menu"
+        }
+        ],
+        "limit": 3
+    }
+    ]
+}
+{%endschema%}

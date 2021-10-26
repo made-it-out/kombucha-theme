@@ -1,0 +1,15 @@
+{
+  "sections": {
+    "header": {
+      "type": "kombucha-header"
+
+    },
+    "hero": {
+      "type": "kombucha-hero"
+    }
+  },
+  "order": [
+    "header",
+    "hero"
+  ]
+}

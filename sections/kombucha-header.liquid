@@ -1,0 +1,34 @@
+<header class="header">
+    <div class="container">
+        <a href="{{routes.root_url}}" class="logo">Kombucha</a>
+
+        <nav class="nav">
+            {{%for link in section.settings.header_menu%}}
+            <a href="{{ link.url }}" class="nav__link">{{ link.title }}</a>
+            {{%endfor%}}
+        </nav>
+
+        <div class="header__icons">
+            <a href="{{routes.search_url}}" class="header__icon"><i class="fas fa-search"></i></a>
+
+            <a href="{{routes.cart_url}}" class="header__icon"><i class="fas fa-shopping-basket"></i></a>
+
+            <a href="{{routes.account_url}}" class="header__icon"><i class="far fa-user"></i></a>
+        </div>
+        <i class="fas fa-bars header__toggle" tabindex="0"></i>
+    </div>
+</header>
+
+{%schema%}
+{
+    "name": "Kombucha Header",
+    "settings": [
+        {
+            "type": "link_list",
+            "id": "header_menu",
+            "label": "Header Menu",
+            "default": "main-menu"
+        }
+    ]
+}
+{%endschema%}
