@@ -302,14 +302,14 @@
           "type": "menu",
           "settings": {
             "menu": "categories",
-            "heading": "Menu"
+            "heading": "Categories"
           }
         },
         "122617b0-4c1b-448c-9858-43d7c113e23c": {
           "type": "menu",
           "settings": {
             "menu": "about-us",
-            "heading": "Menu"
+            "heading": "About Us"
           }
         }
       },
