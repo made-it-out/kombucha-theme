@@ -147,6 +147,7 @@
       "type": "kombucha-image-with-text",
       "settings": {
         "img": "shopify:\/\/shop_images\/pineapple.png",
+        "video": "",
         "reverse": true,
         "tag": "Kombucha",
         "heading": "Pineapple, Lychee & Hibiscus",
@@ -159,6 +160,7 @@
       "type": "kombucha-image-with-text",
       "settings": {
         "img": "shopify:\/\/shop_images\/peach.png",
+        "video": "",
         "reverse": false,
         "tag": "Kombucha",
         "heading": "Peach, Mint & Lemon Balm",
@@ -171,6 +173,7 @@
       "type": "kombucha-image-with-text",
       "settings": {
         "img": "shopify:\/\/shop_images\/blackberry.png",
+        "video": "",
         "reverse": true,
         "tag": "Kombucha",
         "heading": "Blackberry, Raspberry, & Elderflower",
@@ -294,22 +297,19 @@
         "99f512ef-4eb7-4c3e-8593-767e9a424d29": {
           "type": "menu",
           "settings": {
-            "menu": "menu",
-            "heading": "Menu"
+            "menu": "menu"
           }
         },
         "5c5aa57e-ca6e-44b4-b24b-ff029fab5c01": {
           "type": "menu",
           "settings": {
-            "menu": "categories",
-            "heading": "Categories"
+            "menu": "categories"
           }
         },
         "122617b0-4c1b-448c-9858-43d7c113e23c": {
           "type": "menu",
           "settings": {
-            "menu": "about-us",
-            "heading": "About Us"
+            "menu": "about-us"
           }
         }
       },
@@ -323,7 +323,7 @@
         "facebook": "",
         "twitter": "",
         "instagram": "",
-        "bottom_text": "Copyright kombucha. All right reserved"
+        "bottom_text": "&copy; Copyright kombucha. All right reserved"
       }
     }
   },
