@@ -3,16 +3,144 @@
     "header": {
       "type": "kombucha-header",
       "settings": {
+        "header_menu": "main-menu"
       }
     },
     "hero": {
       "type": "kombucha-hero",
+      "blocks": {
+        "d4d2bdb6-e813-497b-aff9-3121c4533056": {
+          "type": "info",
+          "settings": {
+            "info_key": "Ingredients",
+            "info_value": "100% Organic"
+          }
+        },
+        "633d10b8-149e-48f2-884d-577468343635": {
+          "type": "info",
+          "settings": {
+            "info_key": "Flavors",
+            "info_value": "5 variations"
+          }
+        },
+        "3d9957ff-65ac-4c51-8210-620502756ab0": {
+          "type": "info",
+          "settings": {
+            "info_key": "Volume",
+            "info_value": "465ml"
+          }
+        }
+      },
+      "block_order": [
+        "d4d2bdb6-e813-497b-aff9-3121c4533056",
+        "633d10b8-149e-48f2-884d-577468343635",
+        "3d9957ff-65ac-4c51-8210-620502756ab0"
+      ],
       "settings": {
+        "img": "shopify:\/\/shop_images\/blackberry.png",
+        "tag": "Organic Tea",
+        "heading_top": "Sparkling . Tea",
+        "heading_bottom": "Kombucha",
+        "description": "Sparkling teas are essentially a mix of soda and tea, a cold, carbonated version of the healthy classic-and health experts love them. \"These beverages can provide the benefits of the tea in them,\" says Jessica Cording, R.D.",
+        "price": "89.99",
+        "btn_label": "Buy Now",
+        "btn_link": ""
+      }
+    },
+    "16352867203c4e6b48": {
+      "type": "kombucha-clients",
+      "blocks": {
+        "1d8ac039-15b5-43d7-a062-5683103016db": {
+          "type": "client",
+          "settings": {
+            "client_img": "shopify:\/\/shop_images\/afterpay_1_1.png"
+          }
+        },
+        "f5112585-2ff2-4a51-b7e1-4e592988487a": {
+          "type": "client",
+          "settings": {
+            "client_img": "shopify:\/\/shop_images\/unicef-1_1_1.png"
+          }
+        },
+        "2ce0489b-37e7-460e-b445-d033b2d0f5c6": {
+          "type": "client",
+          "settings": {
+            "client_img": "shopify:\/\/shop_images\/first-health_1.png"
+          }
+        },
+        "8dc5fb48-23fc-4ab7-a0f3-0cb92540bf84": {
+          "type": "client",
+          "settings": {
+            "client_img": "shopify:\/\/shop_images\/interneuron_1.png"
+          }
+        },
+        "ac6724f8-f2c5-4dda-93e4-dd2a4cf7cd9e": {
+          "type": "client",
+          "settings": {
+            "client_img": "shopify:\/\/shop_images\/lovato_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "1d8ac039-15b5-43d7-a062-5683103016db",
+        "f5112585-2ff2-4a51-b7e1-4e592988487a",
+        "2ce0489b-37e7-460e-b445-d033b2d0f5c6",
+        "8dc5fb48-23fc-4ab7-a0f3-0cb92540bf84",
+        "ac6724f8-f2c5-4dda-93e4-dd2a4cf7cd9e"
+      ],
+      "settings": {
+      }
+    },
+    "1635286932fe133f5e": {
+      "type": "kombucha-service",
+      "blocks": {
+        "96d4d130-616f-4504-9503-26ec4d1d243e": {
+          "type": "service",
+          "settings": {
+            "service_img": "shopify:\/\/shop_images\/quality-badge-star_1.png",
+            "service_message": "100% Genuien Product Gurentee"
+          }
+        },
+        "eea594f9-55a5-4b12-81d5-fd4446bc11bb": {
+          "type": "service",
+          "settings": {
+            "service_img": "shopify:\/\/shop_images\/delivery-truck-deliver-svgrepo-com_1.png",
+            "service_message": "Gurrented On Time Delivery"
+          }
+        },
+        "55ee459b-159a-4c12-8116-7f1237f253d1": {
+          "type": "service",
+          "settings": {
+            "service_img": "shopify:\/\/shop_images\/money-svgrepo-com_1.png",
+            "service_message": "100% Return Gurrentee & Exchange"
+          }
+        },
+        "f9ae5180-740a-48f4-be52-5705b5ab592a": {
+          "type": "service",
+          "settings": {
+            "service_img": "shopify:\/\/shop_images\/operator-support-svgrepo-com_1.png",
+            "service_message": "24 x7 Customer Support"
+          }
+        }
+      },
+      "block_order": [
+        "96d4d130-616f-4504-9503-26ec4d1d243e",
+        "eea594f9-55a5-4b12-81d5-fd4446bc11bb",
+        "55ee459b-159a-4c12-8116-7f1237f253d1",
+        "f9ae5180-740a-48f4-be52-5705b5ab592a"
+      ],
+      "settings": {
+        "heading": "100% Authentic Product",
+        "subheading": "And produce say the ten moments parties. Simple innate summer fat appear basket his desire joy.",
+        "btn_link": "",
+        "btn_label": ""
       }
     }
   },
   "order": [
     "header",
-    "hero"
+    "hero",
+    "16352867203c4e6b48",
+    "1635286932fe133f5e"
   ]
 }
