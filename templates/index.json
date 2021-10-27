@@ -147,6 +147,7 @@
       "type": "kombucha-image-with-text",
       "settings": {
         "img": "shopify:\/\/shop_images\/pineapple.png",
+        "border_color": "#FE5432",
         "video": "",
         "reverse": true,
         "tag": "Kombucha",
@@ -160,6 +161,7 @@
       "type": "kombucha-image-with-text",
       "settings": {
         "img": "shopify:\/\/shop_images\/peach.png",
+        "border_color": "#d3a38f",
         "video": "",
         "reverse": false,
         "tag": "Kombucha",
@@ -173,6 +175,7 @@
       "type": "kombucha-image-with-text",
       "settings": {
         "img": "shopify:\/\/shop_images\/blackberry.png",
+        "border_color": "#545268",
         "video": "",
         "reverse": true,
         "tag": "Kombucha",
