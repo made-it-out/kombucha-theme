@@ -461,12 +461,28 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--clr-white);
   z-index: 0;
 }
-.image-with-text__img-container::before, .image-with-text__img-container::after {
+.image-with-text__img-container-before, .image-with-text__img-container-after {
   position: absolute;
   content: "";
   width: 15%;
   height: 20%;
   z-index: 1;
+}
+.image-with-text.normal .image-with-text__img-container-before{
+  top: 0;
+  left: 0;
+}
+.image-with-text.normal .image-with-text__img-container-after{
+  bottom: 0;
+  right: 0;
+}
+.image-with-text.reverse .image-with-text__img-container-before{
+  bottom: 0;
+  left: 0;
+}
+.image-with-text.reverse .image-with-text__img-container-after{
+  top: 0;
+  right: 0;
 }
 .image-with-text__watch-video {
   cursor: pointer;

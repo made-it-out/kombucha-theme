@@ -1,9 +1,12 @@
-<section class="image-with-text {%if section.settings.reverse%}reverse{%endif%}">
+<section class="image-with-text {%if section.settings.reverse%}reverse{%else%}normal{%endif%}">
     <div class="container">
         
         <div class="row">
             <div class="col-md-6">
                 <div class="image-with-text__img-container fade-from-{%if section.settings.reverse%}right{%else%}left{%endif%}">
+                    <div class="image-with-text__img-container-before" style="{%if section.settings.reverse%}border-left: 3px solid {{section.settings.border_color}}; border-bottom: 3px solid {{section.settings.border_color}};{%else%}border-left: 3px solid {{section.settings.border_color}}; border-top: 3px solid {{section.settings.border_color}};{%endif%}"></div>
+
+                    <div class="image-with-text__img-container-after" style="{%if section.settings.reverse%}border-right: 3px solid {{section.settings.border_color}}; border-top: 3px solid {{section.settings.border_color}};{%else%}border-right: 3px solid {{section.settings.border_color}}; border-bottom: 3px solid {{section.settings.border_color}};{%endif%}"></div>
                     <div class="image-with-text__watch-video">
                         <p class="image-with-text__watch-video-cta"><i class="fas fa-play play-icon"></i>
                             <span>Watch Video</span>
@@ -33,6 +36,12 @@
         "type": "image_picker",
         "id": "img",
         "label": "Image"
+    },
+    {
+        "type": "color",
+        "id": "border_color",
+        "label": "Border Color",
+        "default": "#FE5432"
     },
     {
         "type": "video_url",
