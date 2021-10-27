@@ -8,6 +8,7 @@ window.addEventListener('DOMContentLoaded', () => {
         const testimonialsNext = section.querySelector('.testimonials__next');
     
         let i = 0;
+        testimonailsSlides[i].classList.add('active')
     
         testimonialsNext.addEventListener('click', testimonialsIncrement)
         testimonialsNext.addEventListener('keydown', (e) => {
